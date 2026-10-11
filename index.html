@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biblioteca Digital UniFECAF - Acesso a acervos, livros acadêmicos e unidades presenciais.">
+  <title>Biblioteca Digital | UniFECAF</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- BARRA DE ACESSIBILIDADE VISÍVEL NO TOPO -->
+  <aside class="top-bar-acessibilidade" aria-label="Atalhos de Acessibilidade">
+    <div class="container top-bar-content">
+      <span>Acessibilidade:</span>
+      <a href="#livros" class="btn-top-acessivel">Ir para o Conteúdo</a>
+      <a href="#sobre" class="btn-top-acessivel">Sobre a Biblioteca</a>
+      <a href="#contato" class="btn-top-acessivel">Contato</a>
+    </div>
+  </aside>
+
+  <!-- ATALHO DE ACESSIBILIDADE WCAG / W3C -->
+  <a href="#livros" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- CABEÇALHO INSTITUCIONAL -->
+  <header class="header-container">
+    <div class="logo-area">
+      <a href="#hero">
+        <img src="assets/imagens/logo-unifecaf.png" alt="Logotipo Institucional UniFECAF" class="logo-img">
+      </a>
+      <span class="logo-divider"></span>
+      <span class="logo-text">Biblioteca Digital</span>
+    </div>
+
+    <nav aria-label="Navegação Principal" class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="#hero" class="nav-link">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#livros" class="nav-link">Nossos Livros</a></li>
+        <li><a href="#unidades" class="nav-link">Unidades</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SEÇÃO HERO / APRESENTAÇÃO -->
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Bem-vindo à Biblioteca Digital UniFECAF</h1>
+        <p class="hero-subtitle">Conhecimento acessível, inovador e disponível a qualquer momento para impulsionar a sua formação acadêmica.</p>
+        <a href="#livros" class="btn-primary">Consultar Acervo</a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE A NOSSA BIBLIOTECA -->
+    <section id="sobre" class="sobre-section container">
+      <div class="section-heading">
+        <span class="section-tag">Institucional</span>
+        <h2>Sobre a Nossa Biblioteca</h2>
+        <div class="heading-line"></div>
+      </div>
+      
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p class="paragraph-lead">
+            A Biblioteca Digital UniFECAF foi concebida para integrar recursos pedagógicos contemporâneos à rotina de estudos dos estudantes de graduação e pós-graduação.
+          </p>
+          <p>
+            Com milhares de títulos nas áreas de Tecnologia, Gestão, Engenharia, Saúde e Ciências Humanas, proporcionamos uma experiência de consulta ágil, acessível e sincronizada com as exigências do mercado e do meio acadêmico.
+          </p>
+          <ul class="sobre-features">
+            <li>Acesso remoto 24 horas por dia, 7 dias por semana.</li>
+          </ul>
+        </div>
+        <div class="sobre-card-highlight">
+          <div class="highlight-box">
+            <h3>Espaço do Conhecimento</h3>
+            <p>Mais do que armazenamento de livros, um ponto de encontro e partilha de saberes entre os polos e a comunidade acadêmica.</p>
+            <div class="metricas-mini">
+              <div class="metrica-item">
+                <span class="metrica-num">+15.000</span>
+                <span class="metrica-label">Títulos Online</span>
+              </div>
+              <div class="metrica-item">
+                <span class="metrica-num">100%</span>
+                <span class="metrica-label">Digital e Acessível</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO NOSSOS LIVROS COM BUSCA E ACESSIBILIDADE -->
+    <section id="livros" class="livros-section container" aria-labelledby="titulo-livros">
+      <div class="section-heading">
+        <span class="section-tag">Catálogo</span>
+        <h2 id="titulo-livros">Nossos Livros</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <!-- BARRA DE PESQUISA E FILTROS -->
+      <div class="catalogo-controles">
+        <form class="search-form" role="search" action="#livros" method="GET"></form>
+          <label for="campo-busca" class="sr-only">Pesquisar por título ou autor</label>
+          <div class="search-input-group">
+            <input 
+              type="search" 
+              id="campo-busca" 
+              name="q" 
+              placeholder="Digite o título, autor ou palavra-chave..." 
+              autocomplete="off"
+            >
+            <button type="submit" class="btn-search" aria-label="Executar busca">
+              Buscar
+            </button>
+          </div>
+
+          <div class="filter-group">
+            <label for="filtro-categoria" class="sr-only">Filtrar por Categoria</label>
+            <select id="filtro-categoria" name="categoria" aria-label="Filtrar livros por categoria">
+              <option value="todas">Todas as Categorias</option>
+              <option value="tecnologia">Tecnologia</option>
+              <option value="design">Design Web</option>
+              <option value="frontend">Frontend</option>
+              <option value="engenharia">Engenharia de Software</option>
+              <option value="algoritmos">Algoritmos</option>
+              <option value="ui-ux">UI / UX</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <!-- GRID DOS 8 LIVROS -->
+      <div class="livros-grid">
+        <!-- Livro 1 -->
+        <article class="livro-card">
+          <div class="livro-capa-wrapper">
+            <img src="assets/imagens/livro-1.jpg" alt="Capa do livro HTML5 e CSS3 - Domine a web do futuro" class="livro-img">
+            <span class="categoria-badge">Tecnologia</span>
+          </div>
+          <div class="livro-info">
+            <h3 class="livro-titulo">HTML5 e CSS3: Domine a Web</h3>
+            <p class="livro-autor">Lucas Mazza</p>
+            <p class="livro-desc">Fundamentos e práticas de desenvolvimento moderno com marcação semântica e estilos avançados.</p>
+            <a href="#contato" class="btn-card">Acessar Exemplar</a>
+          </div>
+        </article>
+
+        <!-- Livro 2 -->
+        <article class="livro-card">
+          <div class="livro-capa-wrapper">
+            <img src="assets/imagens/livro-2.jpg" alt="Capa do livro CSS Eficiente - Técnicas e ferramentas que fazem a diferença" class="livro-img">
+            <span class="categoria-badge">Design Web</span>
+          </div>
+          <div class="livro-info">
+            <h3 class="livro-titulo">CSS Eficiente</h3>
+            <p class="livro-autor">Tárcio Zemel</p>
+            <p class="livro-desc">Metodologias e arquiteturas estruturadas para criação de layouts flexíveis e de elevada performance.</p>
+            <a href="#contato" class="btn-card">Acessar Exemplar</a>
+          </div>
+        </article>
+
+        <!-- Livro 3 -->
+        <article class="livro-card">
+          <div class="livro-capa-wrapper">
+            <img src="assets/imagens/livro-3.jpg" alt="Capa do livro SASS: Aprendendo pré-processadores CSS" class="livro-img">
+            <span class="categoria-badge">Frontend</span>
+          </div>
+          <div class="livro-info">
+            <h3 class="livro-titulo">SASS e Pré-processadores</h3>
+            <p class="livro-autor">Natan Souza</p>
+            <p class="livro-desc">Organização modular de folhas de estilo em grande escala através de variáveis, mixins e nesting.</p>
+            <a href="#contato" class="btn-card">Acessar Exemplar</a>
+          </div>
+        </article>
+
+        <!-- Livro 4 -->
+        <article class="livro-card">
+          <div class="livro-capa-wrapper">
+            <img src="assets/imagens/livro-4.jpg" alt="Capa do livro Código Limpo - Habilidades Práticas do Agile Software" class="livro-img">
+            <span class="categoria-badge">Engenharia</span>
+          </div>
+          <div class="livro-info">
+            <h3 class="livro-titulo">Código Limpo (Clean Code)</h3>
+            <p class="livro-autor">Robert C. Martin</p>
+            <p class="livro-desc">Princípios essenciais de boas práticas, refatoração e clareza estrutural no desenvolvimento de software.</p>
+            <a href="#contato" class="btn-card">Acessar Exemplar</a>
+          </div>
+        </article>
+
+        <!-- Livro 5 -->
+        <article class="livro-card">
+          <div class="livro-capa-wrapper">
+            <img src="assets/imagens/livro-5.jpg" alt="Capa do livro Estruturas de Dados e Algoritmos com JavaScript" class="livro-img">
+            <span class="categoria-badge">Algoritmos</span>
+          </div>
+          <div class="livro-info">
+            <h3 class="livro-titulo">Estruturas de Dados e Algoritmos</h3>
+            <p class="livro-autor">Loiane Groner</p>
+            <p class="livro-desc">Construção de aplicações complexas otimizadas recorrendo a grafos, matrizes e árvores de decisão.</p>
+            <a href="#contato" class="btn-card">Acessar Exemplar</a>
+          </div>
+        </article>
+
+        <!-- Livro 6 -->
+        <article class="livro-card">
+          <div class="livro-capa-wrapper">
+            <img src="assets/imagens/livro-6.jpg" alt="Capa do livro Design Responsivo - Construindo sites para qualquer dispositivo" class="livro-img">
+            <span class="categoria-badge">UI / UX</span>
+          </div>
+          <div class="livro-info">
+            <h3 class="livro-titulo">Design Responsivo</h3>
+            <p class="livro-autor">Ethan Marcotte</p>
+            <p class="livro-desc">Técnicas de layouts fluidos, imagens adaptáveis e media queries para todas as plataformas de tela.</p>
+            <a href="#contato" class="btn-card">Acessar Exemplar</a>
+          </div>
+        </article>
+
+        <!-- Livro 7 -->
+        <article class="livro-card">
+          <div class="livro-capa-wrapper">
+            <img src="assets/imagens/livro-7.jpg" alt="Capa do livro JavaScript: O Guia Definitivo" class="livro-img">
+            <span class="categoria-badge">Frontend</span>
+          </div>
+          <div class="livro-info">
+            <h3 class="livro-titulo">JavaScript: O Guia Definitivo</h3>
+            <p class="livro-autor">David Flanagan</p>
+            <p class="livro-desc">Guia completo para dominar a linguagem fundamental da web moderna com padrões atuais.</p>
+            <a href="#contato" class="btn-card">Acessar Exemplar</a>
+          </div>
+        </article>
+
+        <!-- Livro 8 -->
+        <article class="livro-card">
+          <div class="livro-capa-wrapper">
+            <img src="assets/imagens/livro-8.jpg" alt="Capa do livro Entendendo Algoritmos ilustrado" class="livro-img">
+            <span class="categoria-badge">Algoritmos</span>
+          </div>
+          <div class="livro-info">
+            <h3 class="livro-titulo">Entendendo Algoritmos</h3>
+            <p class="livro-autor">Aditya Bhargava</p>
+            <p class="livro-desc">Uma abordagem visual e prática para entender algoritmos essenciais e estruturas de dados.</p>
+            <a href="#contato" class="btn-card">Acessar Exemplar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO AS UNIDADES -->
+    <section id="unidades" class="unidades-section container">
+      <div class="section-heading">
+        <span class="section-tag">Presencial</span>
+        <h2>As Unidades</h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="unidades-grid">
+        <div class="unidade-card">
+          <div class="unidade-img-wrapper">
+            <img src="assets/imagens/unidade-1.jpg" alt="Instalações do Campus Taboão da Serra - UniFECAF" class="unidade-img">
+          </div>
+          <div class="unidade-content">
+            <h3 class="unidade-nome">Campus Taboão da Serra</h3>
+            <p class="unidade-tipo">Campus Principal & Polo Central</p>
+            <p class="unidade-desc">Espaço equipado com laboratórios de informática, salas de estudo individuais e acervo presencial de consulta.</p>
+            <span class="unidade-status">Disponível para Visitas</span>
+          </div>
+        </div>
+
+        <div class="unidade-card">
+          <div class="unidade-img-wrapper">
+            <img src="assets/imagens/unidade-2.jpg" alt="Instalações do Polo Morumbi - UniFECAF" class="unidade-img">
+          </div>
+          <div class="unidade-content">
+            <h3 class="unidade-nome">Polo Lapa</h3>
+            <p class="unidade-tipo">Núcleo de Apoio ao Estudante</p>
+            <p class="unidade-desc">Área de coworking, empréstimo expresso e terminais com ligação contínua à biblioteca digital.</p>
+            <span class="unidade-status">Disponível para Visitas</span>
+          </div>
+        </div>
+
+        <div class="unidade-card">
+          <div class="unidade-img-wrapper">
+            <img src="assets/imagens/unidade-3.jpg" alt="Instalações do Polo Santo Amaro - UniFECAF" class="unidade-img">
+          </div>
+          <div class="unidade-content">
+            <h3 class="unidade-nome">Polo Santo Amaro</h3>
+            <p class="unidade-tipo">Núcleo de Apoio ao Estudante</p>
+            <p class="unidade-desc">Ambientes climatizados direcionados para pesquisa acadêmica, projetos integradores e grupos de estudo.</p>
+            <span class="unidade-status">Disponível para Visitas</span>
+          </div>
+        </div>
+
+        <div class="unidade-card">
+          <div class="unidade-img-wrapper">
+            <img src="assets/imagens/unidade-4.jpg" alt="Instalações do Polo EAD Integrado - UniFECAF" class="unidade-img">
+          </div>
+          <div class="unidade-content">
+            <h3 class="unidade-nome">Polo Digital Integrado</h3>
+            <p class="unidade-tipo">Suporte EAD</p>
+            <p class="unidade-desc">Central de tutoria e suporte bibliográfico contínuo para estudantes de todas as regiões do país.</p>
+            <span class="unidade-status">Atendimento Online</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL -->
+  <footer id="contato" class="footer-container">
+    <div class="footer-content container">
+      <div class="footer-col">
+        <h4 class="footer-title">Biblioteca UniFECAF</h4>
+        <p class="footer-text">Promovendo o acesso ao saber e incentivando o percurso formativo de toda a comunidade acadêmica através da inovação.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Navegação Rápida</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Página Inicial</a></li>
+          <li><a href="#sobre">Sobre a Biblioteca</a></li>
+          <li><a href="#livros">Catálogo de Livros</a></li>
+          <li><a href="#unidades">Polos e Unidades</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Informações de Contato</h4>
+        <address class="footer-address">
+          <p>Av. Vida Nova, 166 - Jardim Maria Rosa</p>
+          <p>Taboão da Serra - SP, CEP 06764-045</p>
+          <p>Telefone: <a href="tel:+551142104950">(11) 4210-4950</a></p>
+          <p>E-mail: <a href="mailto:biblioteca@unifecaf.com.br">biblioteca@unifecaf.com.br</a></p>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Centro Universitário UniFECAF. Todos os direitos reservados.</p>
+        <p>Projeto acadêmico – Design Web</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

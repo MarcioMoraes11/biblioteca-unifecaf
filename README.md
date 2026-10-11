@@ -8,7 +8,7 @@ A plataforma consiste em uma interface web responsiva, acessível e moderna para
 
 ## 🔗 Links do Projeto
 
-- **Deploy (GitHub Pages):** [Acesse o site no ar](https://SEU_USUARIO.github.io/biblioteca-unifecaf/)
+- **Deploy (GitHub Pages):** [Acesse o site no ar](https://marciomoraes11.github.io/biblioteca-unifecaf/)
 - **Repositório Oficial:** [Visualizar código no GitHub](https://github.com/MarcioMoraes11/biblioteca-unifecaf)
 - **Vídeo Pitch:** [Apresentação no YouTube](LINK_DO_SEU_VIDEO_AQUI)
 
